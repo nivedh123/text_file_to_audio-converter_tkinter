@@ -15,7 +15,7 @@ def voice():
     k=open(inpu.get(),'r').read()
     
     out=gTTS(text=k,lang=lan,slow=False)
-    out.save('output.mp3')
+    out.save('output.mp3')#output file
     os.system('afplay output.mp3')
 
 
@@ -44,7 +44,7 @@ monthchoosen.current()
 print(monthchoosen)
 tk.Label(window,text='Choose language',fg='blue').grid(row=1,column=0)
 tk.Button(window,text="browse",bg='blue',activebackground="red",command=lambda:browse()).grid(row=0,column=2)
-image = Image.open('111.png')
+image = Image.open('111.png')#give your icon image at 111.png
 # The (450, 350) is (height, width)
 image = image.resize((50, 50), Image.ANTIALIAS)
 my_img = ImageTk.PhotoImage(image)
